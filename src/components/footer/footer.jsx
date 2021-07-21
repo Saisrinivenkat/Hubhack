@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Brand from '../Brand/brand';
-import {faTwitter,faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import {faTwitter,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 import { Margin } from '../margin/margin';
 import { useMediaQuery } from 'react-responsive'
 import { device } from '../devices/device';
-import { Link } from 'react-router-dom';
+
 
 const FooterContainer = styled.div`
   width:100%;
@@ -45,30 +45,38 @@ const AboutMe = styled.h4`
   margin-left:10px;
 `;
 
-const Linker = styled(Link)`
+const Linker = styled.a`
   text-decoration:none;
 `;
+
+
 
 export default function Footer() {
 
   const mobile = useMediaQuery({maxWidth: device.mobile});
-  
+
   return (
-    <FooterContainer>
+    <FooterContainer >
       <DetailContainer>
         <Brand  TextSize={ mobile?15:20} Color={'#aaaaaa'} HideLogo/>
         <AboutMe> &#169; Developed By Saisrini💜</AboutMe>
       </DetailContainer>
       <SocialContainer>
-        <Linker to="" > 
+        <Linker href="https://twitter.com/saisrinivenkat_?s=09" target="_blank"> 
           <Icon>
             <FontAwesomeIcon icon={faTwitter} size={mobile?'sm':'1x'}/>
           </Icon>
         </Linker>
         <Margin direction="sit" margin={10}/>
-        <Linker to="" > 
+        <Linker href="https://www.linkedin.com/in/saivenkat-srini-229384191/" target="_blank"> 
         <Icon>
           <FontAwesomeIcon icon={faLinkedin} size={mobile?'sm':'1x'}/>
+        </Icon>
+        </Linker>
+        <Margin direction="sit" margin={10}/>
+        <Linker href="https://github.com/Saisrinivenkat" target="_blank"> 
+        <Icon>
+          <FontAwesomeIcon icon={faGithub} size={mobile?'sm':'1x'}/>
         </Icon>
         </Linker>
       </SocialContainer>

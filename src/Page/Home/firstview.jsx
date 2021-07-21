@@ -12,7 +12,6 @@ const TopSection = styled.div`
   height:100vh;
   background: url(${topSectionBackground});
   background-position: -450px -200px;
-  backgrond-size:cover;
   
   @media screen and (max-width:${device.mobile}px){
     background-position: 0;

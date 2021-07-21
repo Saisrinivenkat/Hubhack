@@ -20,7 +20,7 @@ export const InnerPage = styled.div`
   flex: 1;
   width: 100%;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
-  min-height: 70vh;
+  min-height: ${({ height }) => (height ? height+'vh' : "70vh")};
   padding: 1em;
   display: flex;
   flex-direction: column;
