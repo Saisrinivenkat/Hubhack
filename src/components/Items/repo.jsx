@@ -45,7 +45,7 @@ const MiddleContainer=styled.div`
   align-items: center;
 
   @media screen and (max-width:${device.mobile}px){
-    max-width: 150px;
+    max-width: 120px;
   }
 `;
 
