@@ -109,7 +109,7 @@ export default function SearchRepoInfo() {
             </Field>
             <Field>
               <Icon> <FontAwesomeIcon icon={faCheckDouble}/> </Icon>
-              <Description>Location(Optional)</Description>
+              <Description>Language(Optional)</Description>
             </Field>
             <Field>
               <Icon> <FontAwesomeIcon icon={faCheckDouble}/> </Icon>
