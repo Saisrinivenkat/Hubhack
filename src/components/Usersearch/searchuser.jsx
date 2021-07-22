@@ -47,10 +47,6 @@ const Field = styled.div`
   &:focus{
     border :1.8px solid rgba(0, 0, 0, 0.3);
   }
-  :nth-child(2){
-    width: 100%;
-    justify-content: flex-start;
-  }
 
 `;
 
@@ -63,6 +59,11 @@ const Icon = styled.div`
   color: #979191;
   font-size: 18px;
   cursor:pointer;
+
+  @media screen and (max-width:${device.mobile}px){
+    font-size:8px;
+    padding: 6px;
+  }
 
 `;
 

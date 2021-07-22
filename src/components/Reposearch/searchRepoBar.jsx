@@ -31,17 +31,21 @@ const InputContainer = styled.div`
 
   @media screen and (max-width:${device.mobile}px){
    flex-direction: column;
+   .sm{
+      font-size: 10px;
+    }
   }
 `;
 
 const Input = styled.input`
   width: 100%;
-  padding: 12px 10px;
+  padding: 12px 10px; 
   border-radius: 3px;
   font-size:15px;
   border: none;
   outline: none;
   color: #1d1d1d;
+  background-color: none;
 `;
 
 const Select = styled.select`
@@ -52,6 +56,7 @@ const Select = styled.select`
   border: none;
   outline: none;
   color: #1d1d1d;
+  background-color: none;
 `;
 
 const Button = styled.button`
@@ -153,7 +158,7 @@ export default function SearchBar(){
 
             <Field>
               <Description>Language</Description>
-              <Select required value={language} onChange={(e) => setLanguage(e.target.value)}>
+              <Select className="sm" required value={language} onChange={(e) => setLanguage(e.target.value)}>
                   {languages.map((lang,ind) => {
                    
                     return(<option value={lang} key={ind}>{lang}</option>)
@@ -167,6 +172,7 @@ export default function SearchBar(){
                 type='date'
                 placeholder='Created After'
                 defaultValue="2016-05-12"
+                className='sm'
                 onChange={(e) => setCreated(e.target.value)}
               />
             </Field>

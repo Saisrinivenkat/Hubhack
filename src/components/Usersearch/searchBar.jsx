@@ -30,6 +30,9 @@ const InputContainer = styled.div`
 
   @media screen and (max-width:${device.mobile}px){
    flex-direction: column;
+   .sm{
+      font-size: 10px;
+    }
   }
 `;
 
@@ -41,7 +44,7 @@ const Input = styled.input`
   border: none;
   outline: none;
   color: #1d1d1d;
-
+  background-color: none;
 `;
 
 const Button = styled.button`
@@ -158,6 +161,7 @@ export default function SearchBar(){
                 type='date'
                 placeholder='Created After'
                 defaultValue="2016-05-12"
+                className="sm"
                 onChange={(e) => setCreated(e.target.value)}
               />
             </Field>
