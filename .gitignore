@@ -3,7 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=react
 
 ### react ###
-.DS_*
+.DS_Store
 *.log
 logs
 **/*.backup.*

@@ -43,6 +43,10 @@ const MiddleContainer=styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width:${device.mobile}px){
+    max-width: 150px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -66,6 +70,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 `;
 
 
@@ -83,7 +88,7 @@ const UserName = styled.h3`
   cursor: pointer;
 
   @media screen and (max-width:${device.mobile}px){
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 
@@ -157,7 +162,7 @@ export default function Repo(props) {
           <img src={avatar_url} alt="avatar" />
         </ImageContainer>
         <ContentContainer>
-          <UserName>Owner: {login}</UserName>
+          <UserName>{login}</UserName>
           <Margin direction="stand" margin={6}/>
           <UserName>Repo: {name}</UserName>
         </ContentContainer>

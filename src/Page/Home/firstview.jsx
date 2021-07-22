@@ -58,7 +58,8 @@ const MainTitle = styled.h3`
   text-align:left;
 
   @media screen and (max-width:${device.mobile}px){
-    text-align:center;
+    font-size: 1.5em;
+    text-align:left;
   }
 
 `;
@@ -67,9 +68,6 @@ const LogoContainer = styled.div`
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  @media screen and (max-width:${device.mobile}px){
-    align-items:center;
-  }
 `;
 
 export default function FirstView(props) {
@@ -83,7 +81,7 @@ export default function FirstView(props) {
         {children}
         <TopSectionInner>
             <LogoContainer>
-              <Brand Logosize ={100} TextSize = {30} />
+              <Brand Logosize ={mobile?70:100} TextSize = {mobile?25:30} />
               <MainTitle size={mobile?30:35}>Looking for a new project. <br/>Here you Go!</MainTitle>
             </LogoContainer>
           { !mobile && (<InnerImage>

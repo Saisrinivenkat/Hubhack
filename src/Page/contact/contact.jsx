@@ -56,13 +56,13 @@ const InfoContainer = styled.div`
 
   @media screen and (max-width:${device.mobile}px){
     flex-direction: column;
-    
+    align-items: flex-start;
   }
 `;
 
 const BoxWrapper = styled.div`
   display: flex;
-
+  justify-content: space-between;
 `;
 
 const Icon = styled.div`
@@ -112,7 +112,7 @@ export default function Contact() {
                   <Icon size={30}>
                     <FontAwesomeIcon icon={faMapMarkerAlt}/>
                   </Icon>
-                  <Margin direction="sit" margin={28}/>
+                  <Margin direction="sit" margin={30}/>
                 <DetailWrapper>
                   <Subtitle>Location:</Subtitle>
                   <Description>College of Engineering, Guindy,Chennai - 600025</Description>
@@ -122,7 +122,7 @@ export default function Contact() {
                   <Icon size={30}>
                     <FontAwesomeIcon icon={faMailBulk}/>
                   </Icon>
-                  <Margin direction="sit" margin={10}/>
+                  <Margin direction="sit" margin={20}/>
                 <DetailWrapper>
                   <Subtitle>Email:</Subtitle>
                   <Description>saisrinivenkat@outlook.com</Description>

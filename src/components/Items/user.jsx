@@ -38,9 +38,13 @@ const Number = styled.h1`
 
 const MiddleContainer=styled.div`
   height: 100%;
-  flex-grow: 1;
+  width: 100%;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width:${device.mobile}px){
+    max-width: 150px;
+  }
 `;
 
 const ImageContainer = styled.div`

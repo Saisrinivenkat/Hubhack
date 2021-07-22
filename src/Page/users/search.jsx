@@ -13,8 +13,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 
 const CardContainer = styled.div`
-  width: 300px;
-  min-height: 250px;
+  width: 250px;
+  min-height: 270px;
   margin:1em;
   background-color: #fff;
   box-shadow: 9px -11px 31px -10px rgba(0,0,0,0.56);
