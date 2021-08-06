@@ -60,6 +60,7 @@ const Select = styled.select`
 `;
 
 const Button = styled.button`
+  max-width: 100px;
   height: 100%;
   font-family: "Helvetica Neue";
   font-size: ${ ({ size }) => size?size + 'px': "18px" };
